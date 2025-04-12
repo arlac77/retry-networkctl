@@ -1,0 +1,15 @@
+[Unit]
+Description=reconfigure networkctl until devices are present
+ConditionCapability=CAP_NET_ADMIN
+DefaultDependencies=no
+Conflicts=shutdown.target
+BindsTo=systemd-networkd.service
+After=systemd-networkd.service
+Before=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/retry-networkctl
+
+[Install]
+WantedBy=network-online.target

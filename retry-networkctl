@@ -1,0 +1,17 @@
+#!/usr/bin/sh
+
+while true
+do
+
+status=$(networkctl status|grep "Online state"|awk '{print $3}')
+
+if [ $status = "online" ]
+then
+        echo "ONLINE"
+        exit 0
+else
+        echo "RECONFIGURE"
+        networkctl reconfigure eth0
+        sleep 3
+fi
+done
