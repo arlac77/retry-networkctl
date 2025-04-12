@@ -1,5 +1,5 @@
 pkgname=retry-networkctl
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=0
 pkgdesc='reconfigure networkctl until devices are visible'
 arch=('any')
