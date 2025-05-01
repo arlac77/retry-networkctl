@@ -1,5 +1,5 @@
 pkgname=retry-networkctl
-pkgver=1.0.3
+pkgver=1.0.4
 pkgrel=0
 pkgdesc='reconfigure networkctl until state is online'
 arch=(any)
