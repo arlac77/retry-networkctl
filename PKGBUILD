@@ -8,7 +8,7 @@ license=(MIT)
 public=true
 
 package() {
-    depends=(systemd,bash)
+    depends=(systemd bash)
     install -Dm755 $srcdir/../retry-networkctl "$pkgdir/usr/bin/retry-networkctl"
     install -Dm644 $srcdir/../retry-networkctl.service "$pkgdir/usr/lib/systemd/system/retry-networkctl.service"
 }
