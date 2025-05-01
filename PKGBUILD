@@ -1,8 +1,8 @@
 pkgname=retry-networkctl
 pkgver=1.0.3
 pkgrel=0
-pkgdesc='reconfigure networkctl until state is 'online'
-arch=('any')
+pkgdesc='reconfigure networkctl until state is online'
+arch=(any)
 url='https://github.com/arlac77/retry-networkctl.git'
 license=(MIT)
 public=true
